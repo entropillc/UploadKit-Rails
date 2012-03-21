@@ -18,12 +18,14 @@ After running bundle install to install the gem, you need to run the upload_kit 
   
 == Usage
 
-You can use the following markup for creating a uploader:
+You can use the following markup for creating a uploader for a single file. The URL has to be to a restful interface of uploading files:
 
-  <!-- Multi-file uploader -->
-  <input type="file" class="uk-input" name="attachments" multiple="multiple" data-upload-url="./" data-max-file-size="100mb"/>
+  <%= f.file_field :attachment, :class => "uk-input", :data => { :upload_url => './', :max_file_size => "10mb" } %>
+  
+This is the HTML generated:
+
   <!-- Single-file uploader -->
-  <input type="file" class="uk-input" name="avatar" data-upload-url="./" data-max-file-size="10mb"/>
+  <input type="file" class="uk-input" name="attachment" data-upload-url="./" data-max-file-size="10mb"/>
 
 == Change Log
 
