@@ -1,3 +1,30 @@
-= UploadKitRails
+= UploadKit-Rails
 
-This project rocks and uses MIT-LICENSE.
+UploadKit-Rails packages up Entropi Software's Upload Kit UI and places it in a gem so that it can be easily included in Ruby on Rails based projects. For further information on UploadKit, please refer to http://github.com/entropillc/UploadKit.
+
+UploadKit requires use of Twitter's Bootstrap css library. We recommend the use of Bootstrapped for easily integrating the Bootstrap CSS/Less and Javascript files in to your project. You can find more information about Bootstrapped here: https://github.com/entropillc/bootstrapped.
+
+== Setup
+
+UploadKit-Rails was specifically developed for Rails 3 and above applications. To install, include upload_kit-rails in your Gemfile.
+
+  gem "upload_kit-rails"
+  
+Ensure that you have A copy of Twitter's Bootstrap CSS in your asset pipeline. For ease of use, you can use Bootstrapped. Refer to the installation instructions at https://github.com/entropillc/bootstrapped. 
+
+After running bundle install to install the gem, you need to run the upload_kit install generator. T
+
+  rails g upload_kit:install
+
+== Change Log
+
+=== Version 1.0.0
+  
+  * Adds CSS and Javascript files to ensure that UploadKit works properly
+  * Created generator to place necessary references in application.js and application.css 
+
+== License
+
+Copyright 2011 Entropi Software, LLC.
+
+Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
