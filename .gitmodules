@@ -1,0 +1,3 @@
+[submodule "vendor/assets/UploadKit"]
+	path = vendor/assets/UploadKit
+	url = git@github.com:entropillc/UploadKit.git
