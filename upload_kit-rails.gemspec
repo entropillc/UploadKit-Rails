@@ -9,15 +9,15 @@ Gem::Specification.new do |s|
   s.version     = UploadKit::Rails::VERSION
   s.authors     = ["Nicholas Watson, Justin D'Arcangelo"]
   s.email       = ["nick@entropi.co"]
-  s.homepage    = "http://github.com/entropillc/upload_kit-rails"
+  s.homepage    = "https://github.com/entropillc/UploadKit-Rails"
   s.summary     = "Packages the UploadKit JavaScript UI components in to a Ruby gem"
   s.description = "Packages the UploadKit JavaScript UI components in to a Ruby gem"
 
   s.files = Dir["lib/**/*"] + ["Rakefile", "README.rdoc"]
   s.files += [
-              "vender/assets/UploadKit/uploadkit.js",
-              "vender/assets/UploadKit/uploadkit.css",
-              "vender/assets/UploadKit/plupload/js/plupload.full.js"
+              "vendor/assets/UploadKit/uploadkit.js",
+              "vendor/assets/UploadKit/uploadkit.css",
+              "vendor/assets/UploadKit/externals/plupload/js/plupload.full.js"
             ]
   s.test_files = Dir["test/**/*"]
 
