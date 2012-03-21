@@ -15,6 +15,15 @@ Ensure that you have A copy of Twitter's Bootstrap CSS in your asset pipeline. F
 After running bundle install to install the gem, you need to run the upload_kit install generator. T
 
   rails g upload_kit:install
+  
+== Usage
+
+You can use the following markup for creating a uploader:
+
+  <!-- Multi-file uploader -->
+  <input type="file" class="uk-input" name="attachments" multiple="multiple" data-upload-url="./" data-max-file-size="100mb"/>
+  <!-- Single-file uploader -->
+  <input type="file" class="uk-input" name="avatar" data-upload-url="./" data-max-file-size="10mb"/>
 
 == Change Log
 
