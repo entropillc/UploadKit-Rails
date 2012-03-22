@@ -64,13 +64,13 @@ Upload kit allows you to listen for events that occur during the lifecycle of th
 
 == Version 1.1.0
   
-  * Added custom events for file upload completion and upload errors so that application-specific code can listen for these events and handle server responses and errors.
+* Added custom events for file upload completion and upload errors so that application-specific code can listen for these events and handle server responses and errors.
 
 
 === Version 1.0.0
   
-  * Adds CSS and Javascript files to ensure that UploadKit works properly
-  * Created generator to place necessary references in application.js and application.css 
+* Adds CSS and Javascript files to ensure that UploadKit works properly
+* Created generator to place necessary references in application.js and application.css 
 
 == License
 
