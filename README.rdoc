@@ -26,8 +26,46 @@ This is the HTML generated:
 
   <!-- Single-file uploader -->
   <input type="file" class="uk-input" name="attachment" data-upload-url="./" data-max-file-size="10mb"/>
+  
+== Listening for events
+
+Upload kit allows you to listen for events that occur during the lifecycle of the upload. Below is an example:
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  	<meta charset="utf-8" />
+  	<title>UploadKit Demo</title>
+  	<link rel="stylesheet" type="text/css" href="externals/bootstrap/docs/assets/css/bootstrap.css"/>
+  	<link rel="stylesheet" type="text/css" href="uploadkit.css"/>
+  	<script type="text/javascript" src="jquery-1.7.1.js"></script>
+  	<script type="text/javascript" src="externals/plupload/js/plupload.full.js"></script>
+  	<script type="text/javascript" src="uploadkit.js"></script>
+
+  	<script type="text/javascript">
+  	$(function() {
+  	  $('.uk-input').bind(UKEventType.FileUploaded, function(evt) {
+  	    console.log(evt.response);
+  	  });
+  	});
+  	</script>
+  </head>
+  <body>
+    <form method="post" action="#">
+      <!-- Multi-file uploader -->
+      <input type="file" class="uk-input" name="attachments" multiple="multiple" data-upload-url="./" data-max-file-size="100mb"/>
+      <!-- Single-file uploader -->
+      <input type="file" class="uk-input" name="avatar" data-upload-url="./" data-max-file-size="10mb"/>
+    </form>
+  </body>
+  </html>
 
 == Change Log
+
+== Version 1.1.0
+  
+  * Added custom events for file upload completion and upload errors so that application-specific code can listen for these events and handle server responses and errors.
+
 
 === Version 1.0.0
   
