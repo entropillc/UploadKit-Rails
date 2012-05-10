@@ -20,8 +20,5 @@ Gem::Specification.new do |s|
               "vendor/assets/UploadKit/externals/plupload/js/plupload.full.js"
             ]
   s.test_files = Dir["test/**/*"]
-
   s.add_dependency "rails", ">= 3.1.0"
-
-  s.add_development_dependency "sqlite3"
 end
