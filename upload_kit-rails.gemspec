@@ -17,7 +17,9 @@ Gem::Specification.new do |s|
   s.files += [
               "vendor/assets/UploadKit/uploadkit.js",
               "vendor/assets/UploadKit/uploadkit.css",
-              "vendor/assets/UploadKit/externals/plupload/js/plupload.full.js"
+              "vendor/assets/UploadKit/externals/plupload/js/plupload.full.js",
+              "vendor/assets/UploadKit/externals/plupload/js/plupload.flash.swf",
+              "vendor/assets/UploadKit/externals/plupload/js/plupload.silverlight.xap"
             ]
   s.test_files = Dir["test/**/*"]
   s.add_dependency "rails", ">= 3.1.0"
